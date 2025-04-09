@@ -1,4 +1,20 @@
 <header>
+    <style>
+    @keyframes flash {
+      0% { background-color: #ffeb3b; }
+      50% { background-color: #fff; }
+      100% { background-color: #ffeb3b; }
+    }
+
+    .flash-button {
+      animation: flash 1s infinite;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+    }
+    </style>
     <div class = "navbar">
                  <nav class = "black lighten-2">
                   <div class="container">
@@ -7,7 +23,7 @@
                      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" >menu</i></a>
                      <ul class="right hide-on-med-and-down " id = "navList">
                         <li class="hoverable"><a href="/" style="font-size:18px">Home</a></li>
-                        <li class="hoverable" style="background-color: #ffeb3b; border-radius: 5px; padding: 5px;"><a href="https://github.com/ndobariya219/PropTrackAI/releases" style="font-size:18px; font-weight: bold; color: #000;" target="_blank">Checkout PropTrackAI</a></li>
+                        <li class="hoverable flash-button"><a href="https://github.com/ndobariya219/PropTrackAI/releases" target="_blank">Checkout PropTrackAI</a></li>
                         
                      </ul>
                     </div>
